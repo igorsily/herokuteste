@@ -1,0 +1,36 @@
+<div class="page-header header-filter body">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+        <div class="card card-login color">
+          <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
+            <div class="card-header card-header-primary text-center color">
+              <h4 class="card-title">Login - Abel Santana</h4>
+            </div>
+            <div class="card-body mt-15">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">person</i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Usuário" formControlName="username">
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">lock_outline</i>
+                  </span>
+                </div>
+                <input type="password" class="form-control" placeholder="Senha" formControlName="password">
+              </div>
+            </div>
+            <div class="footer text-center center">
+              <button mat-raised-button type="submit" class="btn btn-danger btn-wd btn-lg pull-center">Entrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

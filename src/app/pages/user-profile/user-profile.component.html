@@ -1,0 +1,132 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header card-header-danger">
+            <h4 class="card-title">Edit Profile</h4>
+            <p class="card-category">Complete seu perfil</p>
+          </div>
+          <div class="card-body">
+            <form [formGroup]="perfilForm" (ngSubmit)="onSubmit()">
+              <div class="row ">
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Nome Completo" type="text" formControlName="nome_completo">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Data Nascimento" type="date" formControlName="data_nascimento">
+                  </mat-form-field>
+                  <!--<mat-form-field>
+                    <input matInput [matDatepicker]="data_nascimento" placeholder="Data Nascimento"
+                      formControlName="data_nascimento" >
+                    <mat-datepicker-toggle matSuffix [for]="data_nascimento"></mat-datepicker-toggle>
+                    <mat-datepicker #data_nascimento></mat-datepicker>
+                  </mat-form-field>-->
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Responsavel financeiro" formControlName="responsavel_financeiro">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="CPF responsavel financeiro" type="text"
+                      formControlName="cpf_responsavel_financeiro">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="CEP" type="text" formControlName="cep">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Rua" type="text" formControlName="rua">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Complemento" type="text" formControlName="complemento">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Bairro" type="text" formControlName="bairro">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Cidade" type="text" formControlName="cidade">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Estado" type="text" formControlName="estado">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Email" type="email" formControlName="email">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Email Responsavel" type="email" formControlName="email_responsavel">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <span matPrefix>+55 &nbsp;</span>
+                    <input matInput placeholder="Telefone residencial" type="text"
+                      formControlName="telefone_residencial">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <span matPrefix>+55 &nbsp;</span>
+                    <input matInput placeholder="Telefone comercial" type="text" formControlName="telefone_comercial">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-4">
+                  <mat-form-field class="example-full-width">
+                    <span matPrefix>+55 &nbsp;</span>
+                    <input matInput placeholder="Celular" type="text" formControlName="celular">
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Experiencia teatro" type="text" formControlName="experiencia_teatro">
+                  </mat-form-field>
+                </div>
+                <div class="col-md-6">
+                  <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Como ficou sabendo?" type="text" formControlName="como_ficou_sabendo">
+                  </mat-form-field>
+                </div>
+
+              </div>
+              <button mat-raised-button type="submit" class="btn btn-danger pull-right">Salvar</button>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

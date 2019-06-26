@@ -1,0 +1,45 @@
+/*my-app .main-panel .main-content .card{
+    animation-duration: 750ms;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+}*/
+
+.tim-typo{
+  padding-left: 25%;
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+}
+.tim-typo .tim-note{
+  bottom: 5px;
+  color: #c0c1c2;
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  left: 0;
+  margin-left: 20px;
+  position: absolute;
+  width: 260px;
+}
+
+html, body {
+  height: 100% ;
+}
+
+.error-snackbar {
+  background-color: #e63b37 !important;
+  color: white !important;
+}
+
+.success-snackbar {
+  background-color: #48A44C !important;
+  color: white !important;
+}
+
+.mat-snack-bar-container .flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
